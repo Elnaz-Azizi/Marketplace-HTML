@@ -1,21 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marketplace App</title>
-  </head>
-  <body>
-    <header>
-      <h1>Header</h1>
-      <p>Short Description</p>
-    </header>
-    <br />
-    <main>
-      <section id="products">
-        <div class="Product">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d4d0d0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d10000;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #products {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 15px 15px 15px rgb(156, 156, 156);
+    }
+
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+    }
+
+    .product {
+      margin: 0 auto;
+      padding: 10px;
+      max-width: 600px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .product-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 5px;
+      width: 600px;
+    }
+
+    .email-field {
+      margin-bottom: 20px;
+    }
+
+    .detail-buttons {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 2%;
+      border: 0;
+      border-radius: 7%;
+    }
+
+    footer {
+      margin-top: 10px;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Header</h1>
+    <p>Short Description</p>
+  </header>
+  <br />
+  <main>
+
+    <section id="products">
+      <h2>Featured Products</h2>
+      <div class="product">
         <h3>Apple Juice</h3>
-        <img src="Image/Apple juice.jpg" title="Apple Juice" />
+        <img src="Image/Apple juice.jpg" title="Apple Juice" class="product-img" />
         <p>
           Apple juice is the juice from apples. It does not have alcohol, and it
           tastes sweet from the natural fruit sugars.
@@ -25,16 +95,15 @@
           <li>Category:Fruit Juice</li>
           <li>Rate:10/10</li>
         </ul>
-<div class="email-field">
-  <label for="email1">Email:fruit juice group@marketplace.com</label>
-  <br>
-  <button>View Details</button>
-</div>
-<br>
-</div>
-        <div class="Product">
+        <label class="email-field">Email:fruit juice group@marketplace.com</label>
+        <br />
+        <br />
+        <button class="detail-buttons">View Details</button>
+        <br>
+      </div>
+      <div class="product">
         <h3>Orange Juice</h3>
-        <img src="Image/Orange juice.jpg" title="Orange Juice" />
+        <img src="Image/Orange juice.jpg" title="Orange Juice" class="product-img" />
         <p>
           Orange juice is the juice from oranges. It does not have alcohol, and it
           tastes sweet from the natural fruit sugars.
@@ -44,20 +113,17 @@
           <li>Category:Fruit Juice</li>
           <li>Rate:10/10</li>
         </ul>
-<div class="email-field">
-  <label for="email1">Email:fruit juice group@marketplace.com</label>
+        <label class="email-field">Email:fruit juice group@marketplace.com</label>
+        <br>
+        <br>
+        <button class="detail-buttons">View Details</button>
+
+    </section>
+  </main>
   <br>
-  <button>View Details</button>
-</div>
+  <footer>
+    <p>&copy; 2024 Marketplace. All rights reserved.</p>
+  </footer>
+</body>
 
-      </section>
-    </main>
-    <br>
-    <footer>
-      <div class="footer">
-        <p>&copy; 2024 Marketplace. All rights reserved.</p>
-      </div>
-
-    </footer>
-  </body>
 </html>
